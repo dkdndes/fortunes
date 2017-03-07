@@ -94,5 +94,14 @@ Store the `fortune.py` script anywhere in your `$PATH`.
     This is a binary file that is used to select fortunes with more speed and
     efficiency.
 
-    For more background information about the fortune utility look at
-    http://en.wikipedia.org/wiki/Fortune_(Unix)
+## Sources for different fortune files follow below this line.
+
+Source: github.com/rjcoelho
+
+How to install:
+	$ git clone git@github.com:rjcoelho/fortunes.git
+	$ cd fortunes/fortunes
+	$ find . -type f -exec sudo ln -s `pwd`/{} /usr/share/games/fortunes/{} \;
+How to add new fortune cookies:
+	* write a text file with % seperating cookies
+	$ strfile cookiefile 
